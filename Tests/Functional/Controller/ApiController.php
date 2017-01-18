@@ -13,7 +13,6 @@ namespace Nelmio\ApiDocBundle\Tests\Functional\Controller;
 
 use FOS\RestBundle\Controller\Annotations\QueryParam;
 use FOS\RestBundle\Controller\Annotations\RequestParam;
-use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Swagger\Annotations as SWG;
 
@@ -39,6 +38,7 @@ class ApiController
      * @SWG\Parameter(
      *     name="foo",
      *     in="query",
+     *     type="string",
      *     description="This is a parameter"
      * )
      */
